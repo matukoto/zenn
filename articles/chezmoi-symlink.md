@@ -1,18 +1,19 @@
 ---
 title: "chezmoiのシンボリックリンクモードが便利"
-emoji: "📀"
+emoji: "🔔"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dotfiles","chezmoi"]
-published: false
+published: true
+published_at: 2024-06-20 18:00
 ---
 
 ## はじめに
-chezmoi は dotfiles 管理ツールです。chezmoi の概要についての記事は Zenn にも多くありますので、[chezmoi検索結果@Zenn](https://zenn.dev/search?q=chezmoi) をご覧ください。
+[chezmoi](https://github.com/twpayne/chezmoi) は dotfiles 管理ツールです。chezmoi の概要についての記事は Zenn にも多くありますので、[chezmoi検索結果@Zenn](https://zenn.dev/search?q=chezmoi) をご覧ください。
 dotfiles を管理している人の多くは、シンボリックリンクを使って管理していると思います。
-chezmoi でもシンボリックモードを使うことで、シンボリックリンクのように機能させることができます。
+chezmoi でもシンボリックモードを使うことで、シンボリックリンクとして機能させることができます。
 
 ## シンボリックリンクモードを設定する
-`~/.config/chezmoi/chezmoi.toml` 以下のように追加することでシンボリックリンクのように機能します。
+`~/.config/chezmoi/chezmoi.toml` に ↓ を追加することでシンボリックリンクとして機能します。
 
 ```toml
 mode = "symlink"
@@ -21,10 +22,11 @@ mode = "symlink"
 
 ## 注意点
 symlink モードにしても以下のファイルはシンボリックリンクとして機能しない点に注意してください：
+
 - テンプレートファイル (hoge.tmpl)
 - プライベートファイル (private_hoge)
 - 暗号化されたファイル (encrypted_hoge)
-- 実行可能ファイル (executable_hoge)
+
 などはシンボリックリンクとして機能しません。
 特にテンプレートファイルが盲点となりやすいです。自分はコレにハマって1時間溶かしました。
 
