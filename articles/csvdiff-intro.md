@@ -2,7 +2,7 @@
 title: "csvdiff という CSV の差分表示ツールが便利"
 emoji: "📀"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["csv", "diff", "cli", "go"]
+topics: ["csv", "diff", "cli"]
 published: true
 published_at: 2024-07-08 18:00
 ---
