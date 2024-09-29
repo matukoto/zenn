@@ -13,3 +13,5 @@ published: false
 ## 内容
 
 ## まとめ
+
+- [Don't refactor the code - DEV Community](https://dev.to/katafrakt/dont-refactor-the-code-igk)
