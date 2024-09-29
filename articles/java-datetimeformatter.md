@@ -1,8 +1,8 @@
 ---
-title: ""
-emoji: "📀"
+title: "Java で月を任意の表示形式に変換する"
+emoji: "🔔"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["java", "react"]
+topics: ["java"]
 published: false
 ---
 はじめに
