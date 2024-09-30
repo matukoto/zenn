@@ -1,5 +1,5 @@
 ---
-title: "miseでnpmパッケージを管理する"
+title: "miseでnpm製cliツールを管理する"
 emoji: "🔔"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mise", "npm", "go"]
@@ -30,7 +30,12 @@ node = "22.9.0"
 mise install
 ```
 
-でインストールできます。
+でインストールできます。これで以下のようなコマンドを実行できます。
+
+```sh
+zenn preview
+vite dev
+```
 
 ## おまけ
 
@@ -58,6 +63,10 @@ experimental = true
 
 詳細な設定方法や他のバックエンドツールのサポート状況については、以下で確認できます。
 [Backends | mise-en-place](https://mise.jdx.dev/dev-tools/backends/#backends)
+
+## 感想
+
+aqua で管理できない cli ツールは、環境が変わるたびにコマンドを実行してインストールしていたのですが、mise のバックエンド機能のおかげで dotfiles に記述しておくだけでインストールできるようになりました。
 
 ## 参考資料
 
