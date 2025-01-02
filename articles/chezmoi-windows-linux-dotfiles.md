@@ -11,8 +11,9 @@ published: false
 
 Windows での dotfiles 管理に苦労している
 
-## 1. 
+## 1
+
 ## 参考
 
- - [Manage machine-to-machine differences - chezmoi](https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#handle-different-file-locations-on-different-systems-with-the-same-contents)
- - [chezmoi で同じ内容のファイルを環境に応じて違うパスに配置する | monolithic kernel](https://blog.mono0x.net/2023/04/16/chezmoi-different-locations-with-the-same-contents/)
+- [Manage machine-to-machine differences - chezmoi](https://www.chezmoi.io/user-guide/manage-machine-to-machine-differences/#handle-different-file-locations-on-different-systems-with-the-same-contents)
+- [chezmoi で同じ内容のファイルを環境に応じて違うパスに配置する | monolithic kernel](https://blog.mono0x.net/2023/04/16/chezmoi-different-locations-with-the-same-contents/)

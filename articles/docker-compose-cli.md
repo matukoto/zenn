@@ -44,7 +44,7 @@ exec aqua exec -- docker-cli-plugin-docker-compose "$@"
 
 - aqua exec は、aqua を使って CLI ツールを実行できる。
 - -- 以降に記述された内容はすべて引数として解釈される。
-ここでは、aquaに対して「これ以降の引数（＝docker-cli-plugin-docker-compose "$@"）」をそのまま渡すよう指示しています。
+ここでは、aqua に対して「これ以降の引数（＝docker-cli-plugin-docker-compose "$@"）」をそのまま渡すよう指示しています。
 - $@ はシェルスクリプト内で使われる特殊変数で、「スクリプトに渡されたすべての引数」を展開する。
 
 #### 2. 実行権限を付与する
