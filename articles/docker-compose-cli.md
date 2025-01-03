@@ -8,7 +8,7 @@ published: false
 ## はじめに
 
 aqua で docker compose を管理するときにつまったのでメモ。
-aqua とは CLI のバージョン管理ツールです。詳しくは[aqua CLI Version Manager 入門(zenn_book)](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/index)を読んでください。
+aqua とは CLI のバージョン管理ツールです。詳しくは [aqua CLI Version Manager 入門(zenn_book)](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/index) を読んでください。
 自分の用途としては aqua と Renovate を組み合わせて CLI のバージョンを自動で更新してもらっています。
 
 ## 内容
