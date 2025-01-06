@@ -54,7 +54,10 @@ chmod u+x $HOME/.docker/cli-plugins/docker-compose
 ```
 
 これで docker compose が使えるようになります。
-Release Note の内容を記事にしただけですが、参考になれば幸いです。
+
+## 感想
+
+Docker CLI plugin についての知識も深まったので良かった。
 
 ## 参考
 
