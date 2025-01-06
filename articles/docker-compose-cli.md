@@ -1,14 +1,14 @@
 ---
-title: "aquaでdocker-composeを管理する"
+title: "aquaでdocker-composeを管理するときにハマった"
 emoji: "🔔"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["aqua", "dockercompose"]
-published: false
+published: true
 ---
 ## はじめに
 
-aqua で docker compose を管理するときにつまったのでメモ。
-aqua とは CLI のバージョン管理ツールです。詳しくは [aqua CLI Version Manager 入門(zenn_book)](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/index) を読んでください。
+aquaでdocker compose を管理するときにつまったのでメモ。
+aquaとは CLI のバージョン管理ツールです。詳しくは [aqua CLI Version Manager 入門(zenn_book)](https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/index) を読んでください。
 自分の用途としては aqua と Renovate を組み合わせて CLI のバージョンを自動で更新してもらっています。
 
 ## 内容
@@ -40,12 +40,12 @@ docker compose などの plugin は `$HOME/.docker/cli-plugins` に配置され�
 exec aqua exec -- docker-cli-plugin-docker-compose "$@"
 ```
 
-コマンドの説明
+##### コマンドの説明
 
 - aqua exec は、aqua を使って CLI ツールを実行できる。
 - -- 以降に記述された内容はすべて引数として解釈される。
-ここでは、aqua に対して「これ以降の引数（＝docker-cli-plugin-docker-compose "$@"）」をそのまま渡すよう指示しています。
-- $@ はシェルスクリプト内で使われる特殊変数で、「スクリプトに渡されたすべての引数」を展開する。
+ここでは、aqua に対して「これ以降の引数（＝docker-cli-plugin-docker-compose "$@"）」をそのまま渡すよう指示している。
+- $@ はシェルスクリプト内で使われる特殊変数であり、「スクリプトに渡されたすべての引数」を展開する。
 
 #### 2. 実行権限を付与する
 
