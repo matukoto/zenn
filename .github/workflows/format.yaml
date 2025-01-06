@@ -1,5 +1,5 @@
 name: textlint format
-on: pull_request
+on: [pull_request, workflow_dispatch]
 jobs:
   textlint:
     runs-on: ubuntu-latest
@@ -7,13 +7,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup mise
-        uses: jdx/mise-action@v2
+      - name: Setup node
+        uses: actions/setup-node@v4.1
         with:
-          install: true
-          log_level: 'info'
-      - name: Install pnpm dependencies
-        run: pnpm install
+          node-version: 22.x
       - name: Run textlint
         # textlint の終了コードを強制0にする
         run: npx textlint --fix ${FILES} | true
